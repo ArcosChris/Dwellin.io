@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
+import { Outlet } from "react-router-dom";
 
 const RootLayout = () => {
     //Once navbar is built <-- GO HERE!
-    //return (<! NAVBAR !>);
+    return (
+        <div className="rootLayout">
+            {/* NAVBAR HERE */}
+            <main>
+                <Outlet />
+            </main>
+        </div>
+    );
 }
 
 export default RootLayout;
