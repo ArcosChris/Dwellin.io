@@ -1,11 +1,12 @@
-import React, { useLayoutEffect } from "react";
+import React from "react";
 import { Outlet } from "react-router-dom";
 
+import Navbar from '../components/Navbar.js'
+
 const RootLayout = () => {
-    //Once navbar is built <-- GO HERE!
     return (
         <div className="rootLayout">
-            {/* NAVBAR HERE */}
+            <Navbar />
             <main>
                 <Outlet />
             </main>
