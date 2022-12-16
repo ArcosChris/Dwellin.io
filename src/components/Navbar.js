@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Logo from "../assets/NavbarLogo.png";
 import {
   MDBContainer,
   MDBNavbar,
@@ -20,9 +21,15 @@ export default function Navbar() {
   const [showBasic, setShowBasic] = useState(false);
 
   return (
-    <MDBNavbar expand="lg" light bgColor="light">
+    <MDBNavbar expand="lg" light bgColor="white">
       <MDBContainer fluid>
-        <MDBNavbarBrand href="#">Brand</MDBNavbarBrand>
+        <MDBNavbarBrand href="#">
+          <img
+            src={Logo}
+            alt="Logo Image"
+            style={{ width: "200px", height: "200px" }}
+          />
+        </MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls="navbarSupportedContent"
