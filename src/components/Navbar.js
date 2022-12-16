@@ -48,13 +48,14 @@ export default function Navbar() {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink href="#">Link</MDBNavbarLink>
+              <MDBNavbarLink active aria-current="page" href="#">
+                About
+              </MDBNavbarLink>
             </MDBNavbarItem>
-
             <MDBNavbarItem>
               <MDBDropdown>
                 <MDBDropdownToggle tag="a" className="nav-link" role="button">
-                  Dropdown
+                  Log in
                 </MDBDropdownToggle>
                 <MDBDropdownMenu>
                   <MDBDropdownItem link>Action</MDBDropdownItem>
@@ -63,27 +64,17 @@ export default function Navbar() {
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavbarItem>
-
-            <MDBNavbarItem>
-              <MDBNavbarLink
-                disabled
-                href="#"
-                tabIndex={-1}
-                aria-disabled="true"
-              >
-                Disabled
-              </MDBNavbarLink>
-            </MDBNavbarItem>
           </MDBNavbarNav>
-
-          <form className="d-flex input-group w-auto">
+          <form className="d-flex input-group w-auto my-auto mb-3 mb-md-0">
             <input
               type="search"
               className="form-control"
-              placeholder="Type query"
+              placeholder="Enter zipcode"
               aria-label="Search"
             />
-            <MDBBtn color="primary">Search</MDBBtn>
+            <MDBBtn color="dark">
+              <i class="fas fa-search"></i>
+            </MDBBtn>
           </form>
         </MDBCollapse>
       </MDBContainer>
