@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../assets/NavbarLogo.png";
+import {Link} from "react-router-dom";
 import {
   MDBContainer,
   MDBNavbar,
@@ -48,8 +49,9 @@ export default function Navbar() {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="#">
-                About
+              <MDBNavbarLink active aria-current="page" href="#"><Link onClick={handleClick} to='about'>
+                About Us
+                </Link>
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
