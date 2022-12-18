@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../css/Navbar.css'
 import Logo from "../assets/NavbarLogo.png";
 import {
   MDBContainer,
@@ -19,31 +20,33 @@ import {
 
 export default function Navbar() {
   const [showBasic, setShowBasic] = useState(false);
+  const [showNavRight, setShowNavRight] = useState(false);
 
   return (
     <MDBNavbar expand="lg" light bgColor="white">
       <MDBContainer fluid>
         <MDBNavbarBrand href="#">
-          <img
+          {/* <img
             src={Logo}
             alt="Logo Image"
-            style={{ width: "200px", height: "200px" }}
-          />
+            style={{ width: "150px", height: "150px" }}
+          /> */}
+          <h2 className="my-0">DWELLINN</h2>
         </MDBNavbarBrand>
 
         <MDBNavbarToggler
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          onClick={() => setShowBasic(!showBasic)}
+          onClick={() => setShowNavRight(!showNavRight)}
         >
           <MDBIcon icon="bars" fas />
         </MDBNavbarToggler>
 
-        <MDBCollapse navbar show={showBasic}>
-          <MDBNavbarNav className="mr-auto mb-2 mb-lg-0">
+        <MDBCollapse navbar show={showNavRight}>
+          <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="#">
+              <MDBNavbarLink active aria-current='page' href='#'>
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
@@ -53,19 +56,12 @@ export default function Navbar() {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBDropdown>
-                <MDBDropdownToggle tag="a" className="nav-link" role="button">
-                  Log in
-                </MDBDropdownToggle>
-                <MDBDropdownMenu>
-                  <MDBDropdownItem link>Action</MDBDropdownItem>
-                  <MDBDropdownItem link>Another action</MDBDropdownItem>
-                  <MDBDropdownItem link>Something else here</MDBDropdownItem>
-                </MDBDropdownMenu>
-              </MDBDropdown>
+              <MDBNavbarLink active aria-current="page" href="#">
+                Login
+              </MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
-          <form className="d-flex input-group w-auto my-auto mb-3 mb-md-0">
+          {/* <form className="d-flex input-group w-auto my-auto mb-3 mb-md-0">
             <input
               type="search"
               className="form-control"
@@ -75,7 +71,7 @@ export default function Navbar() {
             <MDBBtn color="dark">
               <i class="fas fa-search"></i>
             </MDBBtn>
-          </form>
+          </form> */}
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>
