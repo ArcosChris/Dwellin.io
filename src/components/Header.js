@@ -9,7 +9,7 @@ const Header = () => {
                     <h1>Welcome to Dwellinn!</h1>
                     <h4>All rentals, all the time.</h4>
                     <div className="search-input d-flex input-group mb-3 mb-md-0 center-block mx-auto">
-                        <input type="search" className="form-control" placeholder="Enter zipcode" aria-label="Search" />
+                        <input type="search" className="headerInput form-control" placeholder="Enter zipcode" aria-label="Search" />
                     </div>
                 </div>
             </header>

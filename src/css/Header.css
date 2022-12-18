@@ -13,9 +13,9 @@ header{
     color:white;
     image-rendering: optimizeQuality;
 }
-::-webkit-input-placeholder {
+.headerInput::placeholder {
     text-align: center!important;
-  }
+}
 .headerInfo{
     margin-bottom: 10%;
 }

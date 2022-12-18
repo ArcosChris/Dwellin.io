@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import '../css/Navbar.css'
-import Logo from "../assets/NavbarLogo.png";
 import {
   MDBContainer,
   MDBNavbar,
@@ -10,16 +9,10 @@ import {
   MDBNavbarNav,
   MDBNavbarItem,
   MDBNavbarLink,
-  MDBBtn,
-  MDBDropdown,
-  MDBDropdownToggle,
-  MDBDropdownMenu,
-  MDBDropdownItem,
   MDBCollapse,
 } from "mdb-react-ui-kit";
 
 export default function Navbar() {
-  const [showBasic, setShowBasic] = useState(false);
   const [showNavRight, setShowNavRight] = useState(false);
 
   return (

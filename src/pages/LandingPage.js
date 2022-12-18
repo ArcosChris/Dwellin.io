@@ -5,6 +5,7 @@ import '../css/CardCarousel.css'
 import '../css/LandingPage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faBuilding } from '@fortawesome/free-solid-svg-icons'
+import ProfileOffcanvas from "../components/ProfileOffcanvas";
 
 const LandingPage = () => {
     return (
