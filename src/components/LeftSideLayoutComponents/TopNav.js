@@ -65,7 +65,7 @@ const TopNav = () => {
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
-                            <MDBNavbarLink active aria-current="page" href="#">
+                            <MDBNavbarLink active aria-current="page" href="/about">
                                 About
                             </MDBNavbarLink>
                         </MDBNavbarItem>
