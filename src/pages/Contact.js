@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../css/ContactPage.css";
 
 const Contact = () => {
   const initialForm = {
@@ -9,58 +10,63 @@ const Contact = () => {
 
   const [formState, setFormState] = useState(initialForm);
   const { name, email, message } = formState;
-  const onSubmit = (event) => {};
+  const [buttonMessage, setButtonMessage] = useState("Send");
+  const [loading, setIsLoading] = useState(false);
 
-  const onChange = (event) => {};
+  const onSubmit = (event) => {
+    event.preventDefault();
+    console.log(formState);
+    setTimeout(() => {
+      setIsLoading(false);
+      setButtonMessage("Message Sent!");
+      setFormState(initialForm);
+    }, 1000);
+  };
+
+  const onChange = (event) => {
+    const { name, value } = event.target;
+
+    setFormState({ ...formState, [name]: value });
+  };
 
   return (
     <div className="service-top">
       <div className="title">Let's Chat!</div>
       <div className="sub">
-        Interested on our different services? We're here to help you to find
-        your perfect match!
+        Looking for a perfect Landlord or Tenant/s? Say no More!
         <br />
-        Please feel free to reach out.
+        We are at you service.
       </div>
       <form onSubmit={onSubmit}>
-        <div className="side">
-          <label htmlFor="name">Your Name</label>
-          <input
-            type="text"
-            placeholder="Enter Your Name"
-            name="name"
-            required
-            value={name}
-            onChange={onChange}
-          />
-        </div>
-        <div className="side">
-          <label htmlFor="name">Your Name</label>
-          <input
-            type="text"
-            placeholder="Enter Your Name"
-            name="name"
-            required
-            value={name}
-            onChange={onChange}
-          />
-        </div>
-        <div className="side">
-          <label htmlFor="name">Your Email Address</label>
-          <input
-            type="email"
-            placeholder="Enter Email Address"
-            name="email"
-            required
-            value={email}
-            onChange={onChange}
-          />
+        <div className="input-row">
+          <div className="side">
+            <label htmlFor="name"></label>
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              name="name"
+              required
+              value={name}
+              onChange={onChange}
+            />
+          </div>
+          <div className="side">
+            <label htmlFor="name"></label>
+            <input
+              type="email"
+              placeholder="Enter Email Address"
+              name="email"
+              required
+              value={email}
+              onChange={onChange}
+            />
+          </div>
         </div>
         <div className="textarea">
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message"></label>
           <textarea
             type="textarea"
-            id="textarea"
+            id="message"
             placeholder="What's on your mind?"
             name="message"
             required
@@ -68,6 +74,7 @@ const Contact = () => {
             onChange={onChange}
           />
         </div>
+        <button type="submit">{loading ? "" : buttonMessage}</button>
       </form>
     </div>
   );
