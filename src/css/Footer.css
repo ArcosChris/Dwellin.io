@@ -1,0 +1,9 @@
+.footer{
+    box-sizing: content-box;
+    background-color: #62779D;
+    color: white;
+    text-align: center;
+    align-items:center;
+    height: 25px;
+    padding: 1rem!important;
+}
