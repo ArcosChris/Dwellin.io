@@ -26,7 +26,7 @@ const LandingPage = () => {
                 <div className="row">
 
                     <Card className='col-9 col-lg-5 my-3 optionCard'>
-                        <Card.Body>
+                        <Card.Body className="landingPageCardBody">
                             <Card.Title><FontAwesomeIcon icon={faHouse} className="userLandingOption" /></Card.Title>
                             <Card.Subtitle className="my-2">
                                 <span className="fw-bold">Are you someone looking for a new home to rent?</span>
@@ -40,7 +40,7 @@ const LandingPage = () => {
 
 
                     <Card className="col-9 col-lg-5 my-3 optionCard">
-                        <Card.Body>
+                        <Card.Body className="landingPageCardBody">
                             <Card.Title><FontAwesomeIcon icon={faBuilding} className="userLandingOption" /></Card.Title>
                             <Card.Subtitle className="my-2">
                                 <span className="fw-bold">Are you a property owner looking for new tenants?</span>

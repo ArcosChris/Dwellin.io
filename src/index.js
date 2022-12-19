@@ -13,9 +13,14 @@ import LeftSideBarLayout from "./layouts/LeftSideBar";
 import RootLayout from "./layouts/RootLayout";
 import LandingPage from "./pages/LandingPage";
 import LandlordDashBoard from "./pages/LandlordDashboard";
+import AboutPage from "./pages/AboutPage";
+
+
+import Footer from "./components/CommonLayoutComponent/Footer";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
+
 
 root.render(
   <StrictMode>
@@ -25,6 +30,7 @@ root.render(
           {/* Top Nav and Footer */}
           <Route element={<RootLayout />}>
             <Route index element={<LandingPage />} />
+            <Route path="/about" element={<AboutPage />} />
           </Route>
 
           {/* Nav, SideNav, Footer */}
