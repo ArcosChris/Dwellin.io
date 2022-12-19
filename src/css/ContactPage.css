@@ -1,0 +1,110 @@
+.service-top {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 150px;
+  padding-bottom: 20px;
+}
+
+form .input-row .side {
+  width: 45%;
+}
+
+.contact {
+  padding: 120px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 800;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.sub {
+  text-align: center;
+  color: rgb(108, 48, 227);
+  line-height: 1.3;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+form {
+  width: 70%;
+  min-width: 450px;
+}
+
+form .input-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+form input,
+form textarea {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid black;
+  background: transparent;
+  outline: none;
+  text-align: left;
+  font-size: 14.5px;
+  width: 100%;
+  color: black;
+  padding: 0.6em;
+  padding-left: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px goldenrod inset !important;
+  -webkit-box-shadow: 0 0 0 30px goldenrod inset !important;
+  -webkit-text-fill-color: black !important;
+}
+
+.textarea {
+  resize: none;
+  margin-top: 90px;
+  line-height: 1.4;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid rgb(108, 48, 227);
+  display: block;
+  margin: 80px auto 0;
+  position: relative;
+  color: rgb(108, 48, 227);
+  padding: 15px 30px;
+}
+
+button:hover {
+  color: rgb(160, 55, 72);
+}
+
+button:hover::after {
+  width: 100%;
+  left: 0;
+  right: unset;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 0;
+  bottom: 0;
+  left: unset;
+  right: 0;
+  transition: all 0.2s linear;
+  height: 100%;
+  z-index: -1;
+  background-color: gray;
+}
