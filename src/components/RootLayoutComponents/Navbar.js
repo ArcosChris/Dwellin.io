@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../css/Navbar.css'
+import '../../css/Navbar.css'
 import {
   MDBContainer,
   MDBNavbar,
@@ -16,14 +16,9 @@ export default function Navbar() {
   const [showNavRight, setShowNavRight] = useState(false);
 
   return (
-    <MDBNavbar expand="lg" light bgColor="white">
+    <MDBNavbar expand="lg" light bgColor="white" className='pb-0'>
       <MDBContainer fluid>
         <MDBNavbarBrand href="#">
-          {/* <img
-            src={Logo}
-            alt="Logo Image"
-            style={{ width: "150px", height: "150px" }}
-          /> */}
           <h2 className="my-0">DWELLINN</h2>
         </MDBNavbarBrand>
 
@@ -39,7 +34,7 @@ export default function Navbar() {
         <MDBCollapse navbar show={showNavRight}>
           <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='#'>
+              <MDBNavbarLink active aria-current='page' href='/'>
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
@@ -54,17 +49,6 @@ export default function Navbar() {
               </MDBNavbarLink>
             </MDBNavbarItem>
           </MDBNavbarNav>
-          {/* <form className="d-flex input-group w-auto my-auto mb-3 mb-md-0">
-            <input
-              type="search"
-              className="form-control"
-              placeholder="Enter zipcode"
-              aria-label="Search"
-            />
-            <MDBBtn color="dark">
-              <i class="fas fa-search"></i>
-            </MDBBtn>
-          </form> */}
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>

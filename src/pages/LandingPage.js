@@ -5,11 +5,10 @@ import '../css/CardCarousel.css'
 import '../css/LandingPage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faBuilding } from '@fortawesome/free-solid-svg-icons'
-import ProfileOffcanvas from "../components/ProfileOffcanvas";
 
 const LandingPage = () => {
     return (
-        <>
+        <div style={{ textAlign: 'center' }}>
             <Header />
             <div className="container mt-3 mb-5">
                 <div className="row align-items-center">
@@ -54,7 +53,7 @@ const LandingPage = () => {
                     </Card>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

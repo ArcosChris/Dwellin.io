@@ -1,3 +1,6 @@
 .navbar{
     box-shadow: none!important;
 }
+.navbar-nav{
+    text-align: center!important;
+}
