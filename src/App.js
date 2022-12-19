@@ -13,13 +13,13 @@ import {
   Route,
 } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
-import AboutPage from "./pages/AboutPage";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<LandingPage />} />
-      <Route index element={<AboutPage />} />
+      {/* <Route index element={<AboutPage />} /> */}
     </Route>
   )
 );
