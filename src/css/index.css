@@ -1,25 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
+html{
+  height: 100%;
+}
+
 body {
+  height: 100%;
   margin: 0;
   font-family: 'Quicksand'!important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.welcome {
-  margin-top: 120px;
-  color: blue;
-  text-align: center;
-}
-
-.fig-img {
-  text-align: center;
-}
-
-#dropdown-item-button{
- text-align: center;
-}
-
-.card{
-  text-align: center;
 }

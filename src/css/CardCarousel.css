@@ -1,0 +1,15 @@
+.react-multi-carousel-item{
+    padding: 0 10px!important;
+    vertical-align: center;
+}
+
+.react-multiple-carousel__arrow--right, .react-multiple-carousel__arrow--left{
+    display: none;
+}
+
+/* ImageCard */
+.carouselImg{
+    height: 200px!important;
+    width: auto;
+    object-fit: cover;
+}
