@@ -1,0 +1,30 @@
+.userLandingOption{
+    font-size: 45px;
+    color: #62779D;
+}
+
+.card-link{
+    color: #62779D!important;
+    font-weight: bolder;
+}
+
+.card-body{
+    padding: 4.5rem 3rem!important;
+}
+
+.optionCard{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px!important;
+    margin: 0 auto;
+    float: none;
+}
+
+.optionCard:hover{
+    transform: translate3d(0,1px,0) scale(1.05);
+}
+
+@media(min-width: 991px){
+    .carouselParent{
+        padding: 3.2rem!important;
+    }
+}
+

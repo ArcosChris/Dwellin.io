@@ -1,0 +1,17 @@
+.circle {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+   }
+
+
+@media(min-width: 768px){
+    .offcanvas{
+        width: 75%!important;
+    }
+}

@@ -5,19 +5,26 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url('https://media.istockphoto.com/id/1319269543/photo/new-homes-on-a-quiet-street-in-raleigh-nc.jpg?b=1&s=170667a&w=0&k=20&c=Cm6hVc3C8fJnh0AvlZYeAHnck_CxA3WVnznBaimQ1k8=');
+    background-image:   linear-gradient( rgba(0,0,0,0.1), rgba(0,0,0,0.6) ),url('../assets/headerImg.avif');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    clip-path: polygon(0 0, 100% 0%, 100% 75%, 50% 95%, 0% 75%);   
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 95%, 0% 80%);   
     color:white;
+    image-rendering: optimizeQuality;
 }
-
+.headerInput::placeholder {
+    text-align: center!important;
+}
 .headerInfo{
     margin-bottom: 10%;
 }
 
 header h1{
-    font-weight: bold!important;
+    /* font-weight: 600; */
     letter-spacing: 2px;
 }
+
+.search-input{
+    width: 75%!important;
+} 
