@@ -87,8 +87,7 @@ const AboutPage = () => {
               <Card.Body>
                 <Card.Title>Veronica Pichay</Card.Title>
                 <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Life is too short! Shoot your shot for a new dwelling! 
                 </Card.Text>
                 <Button variant="outline-dark">Let's have coffee!</Button>
               </Card.Body>

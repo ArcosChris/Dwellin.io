@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dwellinnlogin-staging-211546-authRole",
+      "UnauthRoleArn": "arn:aws:iam::811282637707:role/amplify-dwellinnlogin-staging-211546-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::811282637707:role/amplify-dwellinnlogin-staging-211546-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-dwellinnlogin-staging-211546-deployment",
+      "UnauthRoleName": "amplify-dwellinnlogin-staging-211546-unauthRole",
+      "StackName": "amplify-dwellinnlogin-staging-211546",
+      "StackId": "arn:aws:cloudformation:us-east-1:811282637707:stack/amplify-dwellinnlogin-staging-211546/4e0d3be0-7fe2-11ed-8365-0ecc2da87269",
+      "AmplifyAppId": "d1e7o889iozni6"
+    },
+    "categories": {
+      "auth": {
+        "dwellinnlogin": {}
+      }
+    }
+  }
+}
