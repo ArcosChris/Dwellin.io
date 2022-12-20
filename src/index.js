@@ -14,17 +14,14 @@ import RootLayout from "./layouts/RootLayout";
 import LandingPage from "./pages/LandingPage";
 import LandlordDashBoard from "./pages/LandlordDashboard";
 import AboutPage from "./pages/AboutPage";
-<<<<<<< Updated upstream
 import ContactPage from "./pages/ContactPage";
 
 import UserProfile from "./pages/UserProfile";
-=======
 import TenantDashboard from "./pages/TenantDashboard";
 
 import Footer from "./components/CommonLayoutComponent/Footer";
 import ServiceRequest from "./pages/ServiceRequest";
 
->>>>>>> Stashed changes
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -45,13 +42,10 @@ root.render(
           {/* Nav, SideNav, Footer */}
           <Route element={<LeftSideBarLayout />}>
             <Route path="landlorddash" element={<LandlordDashBoard />} />
-<<<<<<< Updated upstream
             <Route path="landlorddash/profile" element={<UserProfile />} />
-=======
             <Route path="tenantdash" element={<TenantDashboard />} />
             <Route path="servicedash" element={<ServiceRequest />} />
 
->>>>>>> Stashed changes
           </Route>
         </Route>
       </Routes>
