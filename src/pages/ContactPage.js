@@ -30,52 +30,65 @@ const Contact = () => {
   };
 
   return (
-    <div className="service-top">
-      <div className="title">Let's Chat!</div>
-      <div className="sub">
-        Looking for a perfect Landlord or Tenant/s? Say no More!
-        <br />
-        We are at you service.
+    <div className="service-top container align-self-center">
+      <div className="row text-center">
+        <div className="title col-12 text-muted">Let's Chat!</div>
+
+        <div className="sub col-12">
+          Looking for a perfect Landlord or Tenants?
+          <br />
+          Say no More!
+          <br />
+          We are at you service.
+        </div>
+
+        <form onSubmit={onSubmit} className="col-12">
+
+
+          <div className="row justify-content-center">
+            <div className="side col-12 col-md-6 col-lg-4">
+              <label htmlFor="name"></label>
+              <input
+                className="contactFormInput"
+                type="text"
+                placeholder="Enter Your Name"
+                name="name"
+                required
+                value={name}
+                onChange={onChange}
+              />
+            </div>
+
+            <div className="side col-12 col-md-6 col-lg-4">
+              <label htmlFor="name"></label>
+              <input
+                className="contactFormInput"
+                type="email"
+                placeholder="Enter Email Address"
+                name="email"
+                required
+                value={email}
+                onChange={onChange}
+              />
+            </div>
+
+            <div className="textarea col-12 col-lg-8">
+              <label htmlFor="message"></label>
+              <textarea
+                className="contactFormInput"
+                type="textarea"
+                id="message"
+                placeholder="What's on your mind?"
+                name="message"
+                required
+                value={message}
+                onChange={onChange}
+              />
+            </div>
+          </div>
+          <button className="contactTeamButton" type="submit">{loading ? "" : buttonMessage}</button>
+        </form>
       </div>
-      <form onSubmit={onSubmit}>
-        <div className="input-row">
-          <div className="side">
-            <label htmlFor="name"></label>
-            <input
-              type="text"
-              placeholder="Enter Your Name"
-              name="name"
-              required
-              value={name}
-              onChange={onChange}
-            />
-          </div>
-          <div className="side">
-            <label htmlFor="name"></label>
-            <input
-              type="email"
-              placeholder="Enter Email Address"
-              name="email"
-              required
-              value={email}
-              onChange={onChange}
-            />
-          </div>
-        </div>
-        <div className="textarea">
-          <label htmlFor="message"></label>
-          <textarea
-            type="textarea"
-            id="message"
-            placeholder="What's on your mind?"
-            name="message"
-            required
-            value={message}
-            onChange={onChange}
-          />
-        </div>
-        <button type="submit">{loading ? "" : buttonMessage}</button>
-      </form>
     </div>
   );
 };

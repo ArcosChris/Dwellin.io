@@ -15,11 +15,14 @@ import {
 export default function Navbar() {
   const [showNavRight, setShowNavRight] = useState(false);
 
+
+
+
   return (
     <MDBNavbar expand="lg" light bgColor="white" className='pb-0'>
       <MDBContainer fluid>
-        <MDBNavbarBrand href="#">
-          <h2 className="my-0">DWELLINN</h2>
+        <MDBNavbarBrand href="/">
+          <h2 className="my-0 mainNavTitle">DWELLINN</h2>
         </MDBNavbarBrand>
 
         <MDBNavbarToggler
@@ -34,17 +37,17 @@ export default function Navbar() {
         <MDBCollapse navbar show={showNavRight}>
           <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current='page' href='/'>
+              <MDBNavbarLink className="navigation-item" aria-current='page' href='/'>
                 Home
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="#">
+              <MDBNavbarLink className="navigation-item" aria-current="page" href="/about">
                 About
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink active aria-current="page" href="#">
+              <MDBNavbarLink className="navigation-item" aria-current="page" href="#">
                 Login
               </MDBNavbarLink>
             </MDBNavbarItem>
