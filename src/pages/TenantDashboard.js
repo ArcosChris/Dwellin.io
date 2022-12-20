@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
+import React from "react";
+import "../css/TenantDashboard.css";
 
 
 
@@ -9,71 +8,59 @@ import Container from 'react-bootstrap/Container';
 const TenantDashboard = () => {
     return (
         <div className="dashboard">
-            <h1 className="welcome">Welcome back Tenant!</h1>
+            <h1 className="welcome text-center">Welcome back Tenant!</h1>
 
-            <Container className="justify-content-center mx-auto text-center">
-                <div className="row text-center">
-                    <Card
-                        bg='light'
-                        key='light'
-                        text='dark'
-                        className="c-1 col-12 col-md-5 "
-                    >
-                        <Card.Header>Service Request</Card.Header>
-                        <Card.Body>
-                            <Card.Title>View Active</Card.Title>
-                            <Card.Text>
-                                - Submit New Request -
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-
-                    <Card
-                        bg='light'
-                        key='light'
-                        text='dark'
-                        className="c-1 col-12 col-md-5 "
-                    >
-                        <Card.Header>Service Request</Card.Header>
-                        <Card.Body>
-                            <Card.Title>View Active</Card.Title>
-                            <Card.Text>
-                                - Submit New Request -
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-
-                    <Card
-                        bg='light'
-                        key='light'
-                        text='dark'
-                        className="c-1 col-12 col-md-5 "
-                    >
-                        <Card.Header>Service Request</Card.Header>
-                        <Card.Body>
-                            <Card.Title>View Active</Card.Title>
-                            <Card.Text>
-                                - Submit New Request -
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-
-                    <Card
-                        bg='light'
-                        key='light'
-                        text='dark'
-                        className="c-1 col-12 col-md-5 "
-                    >
-                        <Card.Header>Service Request</Card.Header>
-                        <Card.Body>
-                            <Card.Title>View Active</Card.Title>
-                            <Card.Text>
-                                - Submit New Request -
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
+            <div class="row mt-5 mb-2" data-masonry='{"percentPosition": true }'>
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="card h-100">
+                        <div className="card-title">
+                            <h1 className="text-center mt-2">Service Request</h1>
+                        </div>
+                        <div className="text-center">
+                            <h5>View Active</h5>
+                            <h5>Submit New Ticket</h5>
+                        </div>
+                    </div>
                 </div>
-            </Container>
+
+
+                <div class="col-12 col-md-6 mb-2">
+                    <div class="card h-100">
+                        <div className="card-title">
+                            <h1 className="text-center mt-2">Rent Info</h1>
+                        </div>
+                        <div className="text-center">
+                            <h5>Rent Status</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card h-100">
+                        <div className="card-title">
+                            <h1 className="text-center mt-2">Lease Information</h1>
+                        </div>
+                        <div className="text-center">
+                            <h5>Lease Term: 1 year</h5>
+                            <h5>Lease Start: 1/1/2022</h5>
+                            <h5>Lease End: 1/1/2023</h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6">
+                    <div class="card h-100">
+                        <div className="card-title">
+                            <h1 className="text-center mt-2">Rent Payment</h1>
+                        </div>
+                        <div className="text-center">
+                            <h5>Rent Due: 1/1/2023</h5>
+                            <h5>Amount Due: $1600.00</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 
