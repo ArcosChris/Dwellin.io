@@ -28,12 +28,6 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left: 0;
 }
 
-
-/* TOP NAV */
-.topNavTitle{
-    color: #62779D;
-}
-
 @media (min-width: 768px) {
     #toggleSettings {
         display: none;

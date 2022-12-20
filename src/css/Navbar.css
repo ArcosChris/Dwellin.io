@@ -1,6 +1,24 @@
+.mainNavTitle{
+    color: #62779D!important;
+}
 .navbar{
     box-shadow: none!important;
 }
 .navbar-nav{
     text-align: center!important;
+}
+
+.navigation-item{
+    font-size: calc(0.65em + 1.5vmin)!important;
+}
+
+.navigation-item:hover{
+    color: #62779D!important;
+    font-weight: 500!important;
+}
+
+@media(max-width: 992px){
+    .navigation-item{
+        font-size: calc(0.80em + 1.5vmin)!important;
+    }
 }

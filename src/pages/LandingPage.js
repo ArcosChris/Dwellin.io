@@ -7,18 +7,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faBuilding } from '@fortawesome/free-solid-svg-icons'
 
 const LandingPage = () => {
+
+
+    const rentalImages = [
+        { id: 1, img: "/rentals/rental1.avif" },
+        { id: 2, img: "/rentals/rental2.avif" },
+        { id: 3, img: "/rentals/rental3.avif" },
+        { id: 4, img: "/rentals/rental4.avif" },
+        { id: 5, img: "/rentals/rental5.avif" },
+        { id: 6, img: "/rentals/rental6.avif" },
+    ]
+
+
     return (
         <div style={{ textAlign: 'center' }}>
             <Header />
-            <div className="container mt-3 mb-5">
-                <div className="row align-items-center">
-                    <div className="col-12 col-lg-4">
+            <div className="container-fluid mt-3 mb-5 px-5">
+                <div className="row align-items-center justify-content-center">
+                    <div className="col-12 col-xl-3">
                         <h2>Whether you are a property owner or a tenant looking for their next home.</h2>
                         <h3> We have everything you need.</h3>
                     </div>
 
-                    <div className="col-12 col-lg-8 justify-content-start carouselParent">
-                        <CardCarousel />
+                    <div className="col-12 col-xl-8 justify-content-start carouselParent">
+                        <CardCarousel rentalImages={rentalImages} />
                     </div>
                 </div>
             </div>

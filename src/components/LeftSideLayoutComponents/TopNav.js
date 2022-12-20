@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import '../../css/Navbar.css';
 import {
     MDBContainer,
     MDBNavbar,
@@ -43,8 +44,8 @@ const TopNav = () => {
                     <MDBIcon fas icon="cog" />
                 </MDBBtn>
 
-                <MDBNavbarBrand href="#">
-                    <h2 className="my-0 topNavTitle">DWELLINN</h2>
+                <MDBNavbarBrand href="/">
+                    <h2 className="my-0 mainNavTitle">DWELLINN</h2>
                 </MDBNavbarBrand>
 
                 <MDBNavbarToggler
@@ -60,17 +61,17 @@ const TopNav = () => {
                 <MDBCollapse navbar show={showNavRight}>
                     <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
                         <MDBNavbarItem>
-                            <MDBNavbarLink active aria-current='page' href='/'>
+                            <MDBNavbarLink className="navigation-item" aria-current='page' href='/'>
                                 Home
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
-                            <MDBNavbarLink active aria-current="page" href="/about">
+                            <MDBNavbarLink className="navigation-item" aria-current="page" href="/about">
                                 About
                             </MDBNavbarLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
-                            <MDBNavbarLink active aria-current="page" href="#">
+                            <MDBNavbarLink className="navigation-item" aria-current="page" href="#">
                                 Login
                             </MDBNavbarLink>
                         </MDBNavbarItem>
