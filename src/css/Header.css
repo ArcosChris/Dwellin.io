@@ -13,18 +13,31 @@ header{
     color:white;
     image-rendering: optimizeQuality;
 }
+
+.form-control-med{
+    line-height: 1.8!important;
+    color: #000000;
+    font-size: 1.3rem;
+
+}
+
 .headerInput::placeholder {
     text-align: center!important;
 }
+
 .headerInfo{
-    margin-bottom: 10%;
+    margin-bottom: 35px;
 }
 
 header h1{
-    /* font-weight: 600; */
+    font-size: calc(2.5em + 1.5vmin);
     letter-spacing: 2px;
 }
 
+.slogan-header{
+    font-size: calc(1.3rem + 1.5vmin);
+}
+
 .search-input{
-    width: 75%!important;
+    width: 80%!important;
 } 

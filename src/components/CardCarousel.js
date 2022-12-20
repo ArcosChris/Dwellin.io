@@ -3,16 +3,8 @@ import 'react-multi-carousel/lib/styles.css';
 
 import ImageCard from './ImageCard';
 
-const CardCarousel = () => {
+const CardCarousel = ({ rentalImages }) => {
 
-    const rentalImages = [
-        { id: 1, img: "/rentals/rental1.avif" },
-        { id: 2, img: "/rentals/rental2.avif" },
-        { id: 3, img: "/rentals/rental3.avif" },
-        { id: 4, img: "/rentals/rental4.avif" },
-        { id: 5, img: "/rentals/rental5.avif" },
-        { id: 6, img: "/rentals/rental6.avif" },
-    ]
 
     const responsive = {
         superLargeDesktop: {
