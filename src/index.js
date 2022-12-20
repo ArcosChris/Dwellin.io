@@ -13,6 +13,7 @@ import LeftSideBarLayout from "./layouts/LeftSideBar";
 import RootLayout from "./layouts/RootLayout";
 import LandingPage from "./pages/LandingPage";
 import LandlordDashBoard from "./pages/LandlordDashboard";
+import LoginPage from "./pages/LoginPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 
@@ -22,10 +23,8 @@ import TenantDashboard from "./pages/TenantDashboard";
 import Footer from "./components/CommonLayoutComponent/Footer";
 import ServiceRequest from "./pages/ServiceRequest";
 
-
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
-
 
 root.render(
   <StrictMode>
@@ -33,19 +32,21 @@ root.render(
       <Routes>
         <Route path="/" element={<App />}>
           {/* Top Nav and Footer */}
+
           <Route element={<RootLayout />}>
             <Route index element={<LandingPage />} />
+            <Route path="login" element={<LoginPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="contactteam" element={<ContactPage />} />
           </Route>
 
           {/* Nav, SideNav, Footer */}
+
           <Route element={<LeftSideBarLayout />}>
             <Route path="landlorddash" element={<LandlordDashBoard />} />
             <Route path="landlorddash/profile" element={<UserProfile />} />
             <Route path="tenantdash" element={<TenantDashboard />} />
             <Route path="servicedash" element={<ServiceRequest />} />
-
           </Route>
         </Route>
       </Routes>
