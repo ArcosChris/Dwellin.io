@@ -13,7 +13,7 @@ import LeftSideBarLayout from "./layouts/LeftSideBar";
 import RootLayout from "./layouts/RootLayout";
 import LandingPage from "./pages/LandingPage";
 import LandlordDashBoard from "./pages/LandlordDashboard";
-import LoginPage from "./pages/LoginPage";  
+import LoginPage from "./pages/LoginPage";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -25,10 +25,9 @@ root.render(
         <Route path="/" element={<App />}>
           {/* Top Nav and Footer */}
 
-
-
           <Route element={<RootLayout />}>
             <Route index element={<LandingPage />} />
+            <Route path="login" element={<LoginPage />} />
           </Route>
 
           {/* Nav, SideNav, Footer */}
@@ -37,7 +36,6 @@ root.render(
             <Route path="landlorddash" element={<LandlordDashBoard />} />
           </Route>
         </Route>
-        
       </Routes>
     </BrowserRouter>
   </StrictMode>
