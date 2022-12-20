@@ -3,13 +3,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 60px 150px;
-  padding-bottom: 20px;
-}
+} 
 
-form .input-row .side {
-  width: 45%;
+.title {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 30px;
 }
 
 .contact {
@@ -20,33 +19,15 @@ form .input-row .side {
   flex-direction: column;
 }
 
-.title {
-  font-size: 30px;
-  font-weight: 800;
-  color: black;
-  margin-bottom: 30px;
-}
-
 .sub {
   text-align: center;
   color: rgb(108, 48, 227);
   line-height: 1.3;
   font-size: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
-form {
-  width: 70%;
-  min-width: 450px;
-}
-
-form .input-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-form input,
-form textarea {
+.contactFormInput {
   border: 0;
   border-radius: 0;
   border-bottom: 1px solid black;
@@ -60,44 +41,32 @@ form textarea {
   padding-left: 0;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  box-shadow: 0 0 0 30px goldenrod inset !important;
-  -webkit-box-shadow: 0 0 0 30px goldenrod inset !important;
-  -webkit-text-fill-color: black !important;
-}
 
-.textarea {
-  resize: none;
-  margin-top: 90px;
-  line-height: 1.4;
-}
-
-button {
+.contactTeamButton {
   background-color: transparent;
   border: 1px solid rgb(108, 48, 227);
+  border-radius: 10px;
   display: block;
-  margin: 80px auto 0;
+  margin: 20px auto;
   position: relative;
   color: rgb(108, 48, 227);
   padding: 15px 30px;
 }
 
-button:hover {
-  color: rgb(160, 55, 72);
+.contactTeamButton:hover {
+  color:white;
 }
 
-button:hover::after {
+.contactTeamButton:hover::after {
   width: 100%;
   left: 0;
   right: unset;
 }
 
-button::after {
+.contactTeamButton::after {
   content: "";
   position: absolute;
+  border-radius: 10px;
   width: 0;
   top: 0;
   bottom: 0;
@@ -106,5 +75,5 @@ button::after {
   transition: all 0.2s linear;
   height: 100%;
   z-index: -1;
-  background-color: gray;
+  background-color: #6c757d!important;
 }

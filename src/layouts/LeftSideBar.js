@@ -3,7 +3,6 @@ import Footer from "../components/CommonLayoutComponent/Footer";
 import Sidebar from "../css/Sidebar";
 import TopNav from "../components/LeftSideLayoutComponents/TopNav";
 import '../css/LeftSideBar.css';
-import { useState } from "react";
 
 const LeftSideBarLayout = (props) => {
 
@@ -13,7 +12,7 @@ const LeftSideBarLayout = (props) => {
                 <Sidebar />
                 <div id="page-content-wrapper">
                     <TopNav />
-                    <main className="container-fluid pt-2">
+                    <main className="container-fluid pt-2 px-0">
                         {props.children ? props.children : <Outlet />}
                     </main>
                 </div>

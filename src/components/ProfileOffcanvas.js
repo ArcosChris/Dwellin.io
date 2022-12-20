@@ -14,8 +14,6 @@ const ProfileOffcanvas = () => {
         state: '',
         email: '',
         country: '',
-
-
     })
 
     const [show, setShow] = useState(false);
@@ -28,7 +26,7 @@ const ProfileOffcanvas = () => {
                 Launch
             </Button>
 
-            <Offcanvas show={show} onHide={handleClose}>
+            <Offcanvas show={show} onHide={handleClose} className="offCanvas-main">
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title className='fw-bold'>Profile Settings</Offcanvas.Title>
                 </Offcanvas.Header>

@@ -39,7 +39,7 @@ const AboutPage = () => {
               prioritizing our clients needs.
             </p>
             <div className="text-center">
-              <Button variant="outline-dark">Email Us</Button>
+              <Button variant="outline-dark" href="contactteam">Email Us</Button>
             </div>
           </div>
         </div>
