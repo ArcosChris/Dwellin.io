@@ -4,7 +4,6 @@ import { withAuthenticator } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 import awsExports from "/Users/verpchy/Desktop/dwellin.io/Dwellin.io/src/aws-exports.js";
 Amplify.configure(awsExports);
- 
 
 function LoginPage({ signOut, user }) {
   return (
