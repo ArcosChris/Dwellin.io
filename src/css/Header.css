@@ -14,13 +14,6 @@ header{
     image-rendering: optimizeQuality;
 }
 
-.form-control-med{
-    line-height: 1.8!important;
-    color: #000000;
-    font-size: 1.3rem;
-
-}
-
 .headerInput::placeholder {
     text-align: center!important;
 }
