@@ -7,8 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse, faBuilding } from '@fortawesome/free-solid-svg-icons'
 
 const LandingPage = () => {
-
-
     const rentalImages = [
         { id: 1, img: "/rentals/rental1.avif" },
         { id: 2, img: "/rentals/rental2.avif" },
@@ -36,7 +34,6 @@ const LandingPage = () => {
             </div>
             <div className="container my-5">
                 <div className="row">
-
                     <Card className='col-9 col-lg-5 my-3 optionCard'>
                         <Card.Body className="landingPageCardBody">
                             <Card.Title><FontAwesomeIcon icon={faHouse} className="userLandingOption" /></Card.Title>

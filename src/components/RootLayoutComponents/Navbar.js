@@ -15,9 +15,6 @@ import {
 export default function Navbar() {
   const [showNavRight, setShowNavRight] = useState(false);
 
-
-
-
   return (
     <MDBNavbar expand="lg" light bgColor="white" className='pb-0'>
       <MDBContainer fluid>
@@ -47,7 +44,7 @@ export default function Navbar() {
               </MDBNavbarLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
-              <MDBNavbarLink className="navigation-item" aria-current="page" href="#">
+              <MDBNavbarLink className="navigation-item" aria-current="page" href="/login">
                 Login
               </MDBNavbarLink>
             </MDBNavbarItem>
