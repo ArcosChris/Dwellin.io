@@ -72,7 +72,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="textarea col-12 col-lg-8">
+            <div className="textarea col-12 col-lg-8 mt-2">
               <label htmlFor="message"></label>
               <textarea
                 className="contactFormInput"

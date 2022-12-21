@@ -1,19 +1,17 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Footer from "../components/CommonLayoutComponent/Footer.js";
 
 import Navbar from '../components/RootLayoutComponents/Navbar.js'
 
-const RootLayout = (props) => {
+const SimpleLayout = (props) => {
     return (
         <div className="rootLayout">
             <Navbar />
             <main>
                 {props.children ? props.children : <Outlet />}
             </main>
-            <Footer />
         </div>
     );
 }
 
-export default RootLayout;
+export default SimpleLayout;

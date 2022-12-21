@@ -10,17 +10,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // component
 import App from "./App";
 import LeftSideBarLayout from "./layouts/LeftSideBar";
+import SimpleLayout from "./layouts/SimpleLayout"
 import RootLayout from "./layouts/RootLayout";
 import LandingPage from "./pages/LandingPage";
 import LandlordDashBoard from "./pages/LandlordDashboard";
 import LoginPage from "./pages/LoginPage";
+import Register from "./pages/Register";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 
 import UserProfile from "./pages/UserProfile";
 import TenantDashboard from "./pages/TenantDashboard";
 
-import Footer from "./components/CommonLayoutComponent/Footer";
 import ServiceRequest from "./pages/ServiceRequest";
 
 const rootElement = document.getElementById("root");
@@ -35,7 +36,6 @@ root.render(
 
           <Route element={<RootLayout />}>
             <Route index element={<LandingPage />} />
-            <Route path="login" element={<LoginPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="contactteam" element={<ContactPage />} />
           </Route>
@@ -44,10 +44,18 @@ root.render(
 
           <Route element={<LeftSideBarLayout />}>
             <Route path="landlorddash" element={<LandlordDashBoard />} />
-            <Route path="landlorddash/profile" element={<UserProfile />} />
+            <Route path="profile" element={<UserProfile />} />
             <Route path="tenantdash" element={<TenantDashboard />} />
             <Route path="servicedash" element={<ServiceRequest />} />
           </Route>
+
+          {/* Nav Only */}
+          <Route element={<SimpleLayout />}>
+            <Route path="login" element={<LoginPage />} />
+            <Route path="register" element={<Register />} />
+          </Route>
+
+
         </Route>
       </Routes>
     </BrowserRouter>

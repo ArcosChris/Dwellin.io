@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
 import Footer from "../components/CommonLayoutComponent/Footer";
-import Sidebar from "../css/Sidebar";
+import Sidebar from "../components/LeftSideLayoutComponents/Sidebar";
 import TopNav from "../components/LeftSideLayoutComponents/TopNav";
 import '../css/LeftSideBar.css';
 
