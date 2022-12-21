@@ -43,7 +43,7 @@ const LandingPage = () => {
                             <Card.Text>
                                 Dwellinn wants to help make your home search simple by looking for properties in your area that meet your expectations.
                             </Card.Text>
-                            <Card.Link className="stretched-link" href="#">Register Today</Card.Link>
+                            <Card.Link className="stretched-link" href="/register">Register Today</Card.Link>
                         </Card.Body>
                     </Card>
 
@@ -57,7 +57,7 @@ const LandingPage = () => {
                             <Card.Text>
                                 Dwellinn makes it simple for your keep track of rent payments, finding good tenants, and managing any service requests.
                             </Card.Text>
-                            <Card.Link className="stretched-link" href="#">Register Today</Card.Link>
+                            <Card.Link className="stretched-link" href="/register">Register Today</Card.Link>
                         </Card.Body>
                     </Card>
                 </div>

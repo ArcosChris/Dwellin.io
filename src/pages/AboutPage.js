@@ -54,56 +54,53 @@ const AboutPage = () => {
       </div>
 
       <div className="row justify-content-center">
-        <div className="col-9 col-md-5 col-lg-4">
+        <div className="col-9 col-md-5 col-lg-4 mb-2">
           <Card
             id="card"
             border="#f7f7f7"
-            className="text-center mb-2"
+            className="text-center mb-2 h-100"
           >
             <Card.Img className="my-2 rounded-circle shadow-lg  creator-img image mx-auto" alt="larry" src={Larry} />
-            <Card.Body>
+            <Card.Body className="px-4 d-flex flex-column">
               <Card.Title>Larry Wright</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                After serving in the military, I decide to pursue a career in IT. A bachelor, in Computer science and a software development camp later, I’m now working as an SDE apprentice for Amazon.
               </Card.Text>
-              <Button variant="outline-dark" href="https://github.com/wrijlarr" target="_blank">Let's have coffee!</Button>
+              <Button className="mt-auto" variant="outline-dark" href="https://github.com/wrijlarr" target="_blank">Let's have coffee!</Button>
             </Card.Body>
           </Card>
         </div>
 
-        <div className="col-9 col-md-5 col-lg-4">
+        <div className="col-9 col-md-5 col-lg-4 mb-2">
           <Card
             id="card"
             border="#f7f7f7"
-            className="text-center mb-2"
+            className="text-center mb-2 h-100"
           >
             <Card.Img className="my-2 rounded-circle shadow-lg  creator-img image mx-auto" alt="veronica" src={Veronica} />
-            <Card.Body>
+            <Card.Body className="px-4 d-flex flex-column">
               <Card.Title>Veronica Pichay</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                I have a Public Policy background and I saw the opportunity to work as an SDE that reaches a global impact on the community, which led to a career transition and ultimate self-fulfillment. My goal is to create a non-profit educational organization that teaches incarcerated juveniles how to code, hoping to reduce recidivism.
               </Card.Text>
-              <Button variant="outline-dark" href="https://github.com/veronicapichay" target="_blank">Let's have coffee!</Button>
+              <Button className="mt-auto" variant="outline-dark" href="https://github.com/veronicapichay" target="_blank">Let's have coffee!</Button>
             </Card.Body>
           </Card>
         </div>
 
-        <div className="col-9 col-md-5 col-lg-4">
+        <div className="col-9 col-md-5 col-lg-4 mb-2">
           <Card
             id="card"
             border="#f7f7f7"
-            className="text-center mb-2"
+            className="text-center mb-2 h-100"
           >
             <Card.Img className="my-2 rounded-circle shadow-lg  creator-img image img-responsive mx-auto" alt="chris" src={Chris} />
-            <Card.Body>
+            <Card.Body className="px-4 d-flex flex-column">
               <Card.Title>Christopher Arcos</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                While in the Marine Corps, I came across an HTML and CSS course on Youtube since then I have been hooked on learning more about Web Development and all things programming. I am now working as an SDE Apprentice for Amazon.
               </Card.Text>
-              <Button variant="outline-dark" href="https://github.com/ArcosChris" target="_blank">Let's have coffee!</Button>
+              <Button className="mt-auto" variant="outline-dark" href="https://github.com/ArcosChris" target="_blank">Let's have coffee!</Button>
             </Card.Body>
           </Card>
         </div>
