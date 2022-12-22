@@ -1,11 +1,10 @@
 import React from "react";
 import "../css/TenantDashboard.css";
-
-
-
-
+import { Link } from "react-router-dom";
 
 const TenantDashboard = () => {
+
+
     return (
         <div className="dashboard">
             <h1 className="welcome text-center">Welcome back Tenant!</h1>
@@ -17,8 +16,8 @@ const TenantDashboard = () => {
                             <h1 className="text-center mt-2">Service Request</h1>
                         </div>
                         <div className="text-center">
-                            <h5>View Active</h5>
-                            <h5>Submit New Ticket</h5>
+                            <Link className="text-dark" to="/tracker"><h5>View Active</h5></Link>
+                            <Link className="text-dark" to="/servicedash"><h5>Submit New Ticket</h5></Link>
                         </div>
                     </div>
                 </div>
@@ -30,7 +29,7 @@ const TenantDashboard = () => {
                             <h1 className="text-center mt-2">Rent Info</h1>
                         </div>
                         <div className="text-center">
-                            <h5>Rent Status</h5>
+                            <h5 className="text-success">Rent Status: Payment Received</h5>
                         </div>
                     </div>
                 </div>

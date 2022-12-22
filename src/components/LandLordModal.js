@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-const Maintenance = () => {
+const LandLord = () => {
     return (
         <div
             className="modal show"
@@ -11,14 +11,14 @@ const Maintenance = () => {
         >
             <Modal.Dialog>
                 <Modal.Header closeButton>
-                    <Modal.Title>Maintenance </Modal.Title>
+                    <Modal.Title>Property Owner Information</Modal.Title>
                 </Modal.Header>
 
                 <Modal.Body>
-                    <p> Working Hours: 8am - 6pm</p>
+                    <p> Name: Mr. Joe Smith</p>
                     <p>Phone Number:123-456-789</p>
-                    <p>After Hours Number: 123-456-789</p>
-                    <p> Pending Requests: </p>
+                    <p>Service Number: 888-456-789</p>
+                    <p> email: dewellinn.management@gmail.com</p>
                 </Modal.Body>
 
                 <Modal.Footer>
@@ -26,8 +26,7 @@ const Maintenance = () => {
                 </Modal.Footer>
             </Modal.Dialog>
         </div>
-
     );
 }
 
-export default Maintenance;
+export default LandLord;
