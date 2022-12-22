@@ -9,15 +9,9 @@ const TenantDashboard = () => {
         <div className="dashboard">
             <h1 className="welcome text-center">Welcome back Tenant!</h1>
 
-<<<<<<< Updated upstream
             <div className="row mt-5 mb-2" data-masonry='{"percentPosition": true }'>
                 <div className="col-12 col-md-6 mb-2">
                     <div className="card h-100">
-=======
-            <div class="row mt-3 mb-2" data-masonry='{"percentPosition": true}'>
-                <div class="c1 col-12 col-md-6 mb-2">
-                    <div class="card h-100">
->>>>>>> Stashed changes
                         <div className="card-title">
                             <h1 className="text-center mt-2">Service Request</h1>
                         </div>
@@ -28,14 +22,9 @@ const TenantDashboard = () => {
                     </div>
                 </div>
 
-<<<<<<< Updated upstream
 
                 <div className="col-12 col-md-6 mb-2">
                     <div className="card h-100">
-=======
-                <div class="c1 col-12 col-md-6 mb-2">
-                    <div class="card h-100">
->>>>>>> Stashed changes
                         <div className="card-title">
                             <h1 className="text-center mt-2">Rent Info</h1>
                         </div>
@@ -45,13 +34,8 @@ const TenantDashboard = () => {
                     </div>
                 </div>
 
-<<<<<<< Updated upstream
                 <div className="col-12 col-md-6">
                     <div className="card h-100">
-=======
-                <div class="c1 col-12 col-md-6 mb-2">
-                    <div class="card h-100">
->>>>>>> Stashed changes
                         <div className="card-title">
                             <h1 className="text-center mt-2">Lease Information</h1>
                         </div>
@@ -63,14 +47,9 @@ const TenantDashboard = () => {
                     </div>
                 </div>
 
-<<<<<<< Updated upstream
 
                 <div className="col-12 col-md-6">
                     <div className="card h-100">
-=======
-                <div class="c1 col-12 col-md-6 mb-2">
-                    <div class="card h-100">
->>>>>>> Stashed changes
                         <div className="card-title">
                             <h1 className="text-center mt-2">Rent Payment</h1>
                         </div>
