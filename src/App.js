@@ -112,7 +112,7 @@ function App() {
 
       {/* Nav, SideNav, Footer */}
 
-      <Route element={<LeftSideBarLayout />}>
+      <Route element={<LeftSideBarLayout isLoggedIn={loggedIn} handleSignOut={signOut} />}>
         <Route path="landlorddash" element={<LandlordDashBoard />} />
         <Route path="landlorddash/profile" element={<UserProfile />} />
         <Route path="tenantdash" element={<TenantDashboard />} />
