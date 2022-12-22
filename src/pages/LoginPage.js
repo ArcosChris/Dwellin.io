@@ -1,68 +1,85 @@
-import React from 'react';
+import { React, useState } from 'react';
 import '../css/LoginPage.css';
 import Logo from '../assets/NavbarLogo.png'
 import { Link } from 'react-router-dom';
 
-import {
-  MDBInput
-}
-  from 'mdb-react-ui-kit';
 
-function LoginPage() {
+
+
+const initialFormState = {
+  username: '', password: ''
+};
+
+
+function LoginPage({ userLogin }) {
+
+  const [login, setLogin] = useState(initialFormState);
+
+  const onChange = (e) => {
+    e.persist();
+    setLogin(() => ({ ...login, [e.target.name]: e.target.value }));
+  }
+
   return (
-    <div className="container-fluid my-5 gradient-form">
+    <section className="mt-2" style={{ backgroundColor: "#eee" }} >
+      <div className="container mt-5 h-100">
+        <div className="row d-flex justify-content-center align-items-center h-100">
+          <div className="col-lg-12 col-xl-11">
+            <div className="card text-black" style={{ borderRadius: '25px' }}>
+              <div className="card-body p-md-5">
+                <div className="row justify-content-center align-items-center">
 
-      <div className='row justify-content-center'>
+                  <div className="col-md-9 col-lg-5 col-xl-5 d-flex align-items-center order-1 justify-content-center">
+                    <img src={Logo}
+                      className="img-fluid" alt="dwellinn logo" />
+                  </div>
+
+                  <div className="col-md-9 col-lg-5 col-xl-5 order-2 order-lg-1 mx-auto">
+
+                    <form className="mx-1 mx-md-4" onSubmit={e => userLogin(e, login)}>
 
 
-        <div className="col-12 col-md-6 mb-5">
-          <div className="d-flex flex-column  justify-content-center custom-bg h-100 mb-4">
+                      <div className="d-flex flex-row align-items-center mb-2">
+                        <i className="fas fa-envelope fa-lg me-3 fa-fw mt-4"></i>
+                        <div className="form flex-fill mb-0">
+                          <label className="form-label mx-auto">Email</label>
+                          <input name="username" onChange={onChange} type="email" className="form-control" />
+                        </div>
+                      </div>
 
-            <div className="text-white px-3 py-4 p-md-5 mx-md-4">
-              <h4 class="mb-4">We are more than just a company</h4>
-              <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
+
+
+                      <div className="d-flex flex-row align-items-center mb-2">
+                        <i className="fas fa-key fa-lg me-3 fa-fw mt-4"></i>
+                        <div className="form flex-fill mb-0">
+                          <label className="form-label mx-auto">Password</label>
+                          <input name="password" onChange={onChange} type="password" className="form-control" />
+                        </div>
+                      </div>
+
+                      <div className="form-check d-flex justify-content-center mb-2">
+                        <Link to="#">Forgot password?</Link>
+                      </div>
+
+                      <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                        <button type="submit" className="btn btn-outline-secondary">Submit</button>
+                      </div>
+
+                      <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-0">
+                        <p className="mb-0">Don't have an account?</p>
+                        <Link to="/register" className='mx-2 text-muted block'>Register</Link>
+                      </div>
+
+                    </form>
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-        <div className="col-12 col-md-6 mb-5">
-          <div className="d-flex flex-column">
-
-            <div className="text-center">
-              <img src={Logo}
-                style={{ width: '50%' }} alt="logo" />
-            </div>
-
-            <div className="container">
-              <p>Please login to your account</p>
-              <MDBInput wrapperClass="mb-3" label='Email address' id='form1' type='email' />
-              <MDBInput wrapperClass='mb-3' label='Password' id='form2' type='password' />
-            </div>
-
-            <div className="text-center pt-1 mb-0 pb-1">
-              <button className="btn btn-outline mb-1 w-75 custom-bg">Sign in</button>
-            </div>
-
-            <div className="text-center pb-1 mb-1">
-              <a className="text-muted block" href="#!">Forgot password?</a>
-            </div>
-
-            <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-0">
-              <p className="mb-0">Don't have an account?</p>
-              <Link to="/register" exact className='mx-2 text-muted block'>Register</Link>
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-      </div>
-    </div >
+      </div >
+    </section >
   );
 }
 

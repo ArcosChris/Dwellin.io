@@ -1,63 +1,20 @@
 import React from "react";
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ReactDOM from 'react-dom/client';
+import App from "./App";
 import "./css/index.css";
 import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter } from "react-router-dom";
 
-// component
-import App from "./App";
-import LeftSideBarLayout from "./layouts/LeftSideBar";
-import SimpleLayout from "./layouts/SimpleLayout"
-import RootLayout from "./layouts/RootLayout";
-import LandingPage from "./pages/LandingPage";
-import LandlordDashBoard from "./pages/LandlordDashboard";
-import LoginPage from "./pages/LoginPage";
-import Register from "./pages/Register";
-import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
+import { Amplify } from 'aws-amplify';
+import config from './aws-exports';
+Amplify.configure(config);
 
-import UserProfile from "./pages/UserProfile";
-import TenantDashboard from "./pages/TenantDashboard";
-
-import ServiceRequest from "./pages/ServiceRequest";
-
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />}>
-          {/* Top Nav and Footer */}
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 
-          <Route element={<RootLayout />}>
-            <Route index element={<LandingPage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="contactteam" element={<ContactPage />} />
-          </Route>
-
-          {/* Nav, SideNav, Footer */}
-
-          <Route element={<LeftSideBarLayout />}>
-            <Route path="landlorddash" element={<LandlordDashBoard />} />
-            <Route path="profile" element={<UserProfile />} />
-            <Route path="tenantdash" element={<TenantDashboard />} />
-            <Route path="servicedash" element={<ServiceRequest />} />
-          </Route>
-
-          {/* Nav Only */}
-          <Route element={<SimpleLayout />}>
-            <Route path="login" element={<LoginPage />} />
-            <Route path="register" element={<Register />} />
-          </Route>
-
-
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  </StrictMode>
 );

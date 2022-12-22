@@ -18,25 +18,25 @@ const LandlordDashboard = () => {
         <div className="container">
             <h1 className="text-center">Welcome back Christopher!</h1>
             <ProfileOffcanvas />
-            <div class="row mt-5 mb-2" data-masonry='{"percentPosition": true }'>
-                <div class="col-12 col-md-6 mb-2">
+            <div className="row mt-5 mb-2" data-masonry='{"percentPosition": true }'>
+                <div className="col-12 col-md-6 mb-2">
 
-                    <div class="card landlordDashLink">
-                        <div class="card-body">
+                    <div className="card landlordDashLink">
+                        <div className="card-body">
                             <h3 className="text-center">List New Property</h3>
                             <a className="stretched-link" href="#"></a>
                         </div>
                     </div>
 
-                    <div class="card mt-2 landlordDashLink">
-                        <div class="card-body">
+                    <div className="card mt-2 landlordDashLink">
+                        <div className="card-body">
                             <h3 className="text-center">Tenant Details</h3>
                             <a className="stretched-link" href="#"></a>
                         </div>
                     </div>
 
-                    <div class="card mt-2 landlordDashLink">
-                        <div class="card-body">
+                    <div className="card mt-2 landlordDashLink">
+                        <div className="card-body">
                             <h3 className="text-center">Tenant Details</h3>
                             <a className="stretched-link" href="#"></a>
                         </div>
@@ -44,8 +44,8 @@ const LandlordDashboard = () => {
 
                 </div>
 
-                <div class="col-12 col-md-6">
-                    <div class="card h-100 mainDashItem">
+                <div className="col-12 col-md-6">
+                    <div className="card h-100 mainDashItem">
                         <div className="card-title">
                             <h1 className="text-center mt-2">Rental Information</h1>
                         </div>
@@ -61,12 +61,12 @@ const LandlordDashboard = () => {
             </div>
 
             <div className="row mt-3">
-                <div class="col-12">
-                    <div class="card h-100 p-3 mainDashItem">
+                <div className="col-12">
+                    <div className="card h-100 p-3 mainDashItem">
                         <div className="row">
                             <div className="col-12 col-md-6 col-xl-3 my-2 ">
-                                <div class="card landlordDashLink">
-                                    <div class="card-body">
+                                <div className="card landlordDashLink">
+                                    <div className="card-body">
                                         <h3 className="text-center">Applications</h3>
                                         <a className="stretched-link" href="#"></a>
                                     </div>
@@ -74,8 +74,8 @@ const LandlordDashboard = () => {
                             </div>
 
                             <div className="col-12 col-md-6 col-xl-3 my-2 ">
-                                <div class="card landlordDashLink">
-                                    <div class="card-body">
+                                <div className="card landlordDashLink">
+                                    <div className="card-body">
                                         <h3 className="text-center">Active Listings</h3>
                                         <a className="stretched-link" href="#"></a>
                                     </div>
@@ -83,8 +83,8 @@ const LandlordDashboard = () => {
                             </div>
 
                             <div className="col-12 col-md-6 col-xl-3 my-2 ">
-                                <div class="card landlordDashLink">
-                                    <div class="card-body">
+                                <div className="card landlordDashLink">
+                                    <div className="card-body">
                                         <h3 className="text-center">Current Lease</h3>
                                         <a className="stretched-link" href="#"></a>
                                     </div>
@@ -92,8 +92,8 @@ const LandlordDashboard = () => {
                             </div>
 
                             <div className="col-12 col-md-6 col-xl-3 my-2 ">
-                                <div class="card landlordDashLink">
-                                    <div class="card-body">
+                                <div className="card landlordDashLink">
+                                    <div className="card-body">
                                         <h3 className="text-center">Tenant Details</h3>
                                         <a className="stretched-link" href="#"></a>
 

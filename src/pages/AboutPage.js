@@ -81,7 +81,7 @@ const AboutPage = () => {
             <Card.Body className="px-4 d-flex flex-column">
               <Card.Title>Veronica Pichay</Card.Title>
               <Card.Text>
-                I have a Public Policy background and I saw the opportunity to work as an SDE that reaches a global impact on the community, which led to a career transition and ultimate self-fulfillment. My goal is to create a non-profit educational organization that teaches incarcerated juveniles how to code, hoping to reduce recidivism.
+                I have a Public Policy background and the opportunity to work as an SDE reaches a global impact on the community, which led to a career transition and ultimate self-fulfillment. My goal is to create a non-profit educational organization that teaches incarcerated juveniles how to code, hoping to reduce recidivism.
               </Card.Text>
               <Button className="mt-auto" variant="outline-dark" href="https://github.com/veronicapichay" target="_blank">Let's have coffee!</Button>
             </Card.Body>
