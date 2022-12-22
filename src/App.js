@@ -15,6 +15,9 @@ import UserProfile from "./pages/UserProfile";
 import TenantDashboard from "./pages/TenantDashboard";
 import ServiceRequest from "./pages/ServiceRequest";
 import { Route, Routes, useNavigate } from "react-router-dom";
+import LandLord from './components/LandLordModal';
+import ManintenanceModal from './components/MaintenanceModal';
+import RequestTracker from './pages/RequestTracker'
 
 // amplify 
 import { Auth, Hub } from 'aws-amplify';
@@ -109,11 +112,15 @@ function App() {
 
       {/* Nav, SideNav, Footer */}
 
-      <Route element={<LeftSideBarLayout isLoggedIn={loggedIn} handleSignOut={signOut} />}>
+      <Route element={<LeftSideBarLayout />}>
         <Route path="landlorddash" element={<LandlordDashBoard />} />
-        <Route path="profile" element={<UserProfile />} />
+        <Route path="landlorddash/profile" element={<UserProfile />} />
         <Route path="tenantdash" element={<TenantDashboard />} />
         <Route path="servicedash" element={<ServiceRequest />} />
+        <Route path="landlordmod" element={<LandLord />} />
+        <Route path="maintenance" element={<ManintenanceModal />} />
+        <Route path="tracker" element={<RequestTracker />} />
+
       </Route>
 
       {/* Nav Only */}
