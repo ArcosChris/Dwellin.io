@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import { React, useState } from 'react';
 import '../css/LoginPage.css';
 import Logo from '../assets/NavbarLogo.png'
@@ -19,6 +20,14 @@ function LoginPage({ userLogin }) {
     e.persist();
     setLogin(() => ({ ...login, [e.target.name]: e.target.value }));
   }
+=======
+import React from "react";
+import { Amplify } from "aws-amplify";
+import { withAuthenticator } from "@aws-amplify/ui-react";
+import "@aws-amplify/ui-react/styles.css";
+// import awsExports from "/Users/verpchy/Desktop/dwellin.io/Dwellin.io/src/aws-exports.js";
+// Amplify.configure(awsExports);
+>>>>>>> Stashed changes
 
   return (
     <section className="mt-2" style={{ backgroundColor: "#eee" }} >
