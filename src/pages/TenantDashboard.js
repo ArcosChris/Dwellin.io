@@ -10,9 +10,9 @@ const TenantDashboard = () => {
         <div className="dashboard">
             <h1 className="welcome text-center">Welcome back Tenant!</h1>
 
-            <div class="row mt-5 mb-2" data-masonry='{"percentPosition": true }'>
-                <div class="col-12 col-md-6 mb-2">
-                    <div class="card h-100">
+            <div className="row mt-5 mb-2" data-masonry='{"percentPosition": true }'>
+                <div className="col-12 col-md-6 mb-2">
+                    <div className="card h-100">
                         <div className="card-title">
                             <h1 className="text-center mt-2">Service Request</h1>
                         </div>
@@ -24,8 +24,8 @@ const TenantDashboard = () => {
                 </div>
 
 
-                <div class="col-12 col-md-6 mb-2">
-                    <div class="card h-100">
+                <div className="col-12 col-md-6 mb-2">
+                    <div className="card h-100">
                         <div className="card-title">
                             <h1 className="text-center mt-2">Rent Info</h1>
                         </div>
@@ -35,8 +35,8 @@ const TenantDashboard = () => {
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6">
-                    <div class="card h-100">
+                <div className="col-12 col-md-6">
+                    <div className="card h-100">
                         <div className="card-title">
                             <h1 className="text-center mt-2">Lease Information</h1>
                         </div>
@@ -49,8 +49,8 @@ const TenantDashboard = () => {
                 </div>
 
 
-                <div class="col-12 col-md-6">
-                    <div class="card h-100">
+                <div className="col-12 col-md-6">
+                    <div className="card h-100">
                         <div className="card-title">
                             <h1 className="text-center mt-2">Rent Payment</h1>
                         </div>

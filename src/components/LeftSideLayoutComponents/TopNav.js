@@ -15,7 +15,7 @@ import {
 
 
 // Used for Leftsidebar layout
-const TopNav = () => {
+const TopNav = ({ isLoggedIn, signOut }) => {
     const [showNavRight, setShowNavRight] = useState(false);
     const [width, setWidth] = useState(window.innerWidth)
 
@@ -70,10 +70,20 @@ const TopNav = () => {
                                 About
                             </MDBNavbarLink>
                         </MDBNavbarItem>
+
                         <MDBNavbarItem>
-                            <MDBNavbarLink className="navigation-item" aria-current="page" href="#">
-                                Login
-                            </MDBNavbarLink>
+                            {!isLoggedIn &&
+                                <MDBNavbarLink className="navigation-item" aria-current="page" href="/login">
+                                    Login
+                                </MDBNavbarLink>
+                            }
+
+                            {isLoggedIn &&
+                                <MDBNavbarLink className="navigation-item" aria-current="page" onClick={signOut}>
+                                    Logout
+                                </MDBNavbarLink>
+                            }
+
                         </MDBNavbarItem>
                     </MDBNavbarNav>
                 </MDBCollapse>

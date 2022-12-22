@@ -12,7 +12,7 @@ import {
   MDBCollapse,
 } from "mdb-react-ui-kit";
 
-export default function Navbar() {
+export default function Navbar({ isLoggedIn, signOut }) {
   const [showNavRight, setShowNavRight] = useState(false);
 
   return (
@@ -43,10 +43,28 @@ export default function Navbar() {
                 About
               </MDBNavbarLink>
             </MDBNavbarItem>
+
+            {isLoggedIn &&
+              <MDBNavbarItem>
+                <MDBNavbarLink className="navigation-item" aria-current="page" href="/landlorddash">
+                  Dashboard
+                </MDBNavbarLink>
+              </MDBNavbarItem>
+            }
+
             <MDBNavbarItem>
-              <MDBNavbarLink className="navigation-item" aria-current="page" href="/login">
-                Login
-              </MDBNavbarLink>
+              {!isLoggedIn &&
+                <MDBNavbarLink className="navigation-item" aria-current="page" href="/login">
+                  Login
+                </MDBNavbarLink>
+              }
+
+              {isLoggedIn &&
+                <MDBNavbarLink className="navigation-item" aria-current="page" onClick={signOut}>
+                  Logout
+                </MDBNavbarLink>
+              }
+
             </MDBNavbarItem>
           </MDBNavbarNav>
         </MDBCollapse>
